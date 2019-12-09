@@ -28,7 +28,7 @@ limit-inference-results=100
 
 # List of plugins (as comma separated values of python modules names) to load,
 # usually to register additional checkers.
-load-plugins=variable_check
+#load-plugins=
 
 # Pickle collected data for later comparisons.
 persistent=yes
@@ -139,7 +139,10 @@ disable=print-statement,
         exception-escape,
         comprehension-escape,
         missing-docstring,
-        cyclic-import
+        cyclic-import,
+        pointless-string-statement,
+        wrong-import-position,
+        wrong-import-order
 
 # Enable the message, report, category or checker with the given id(s). You can
 # either give multiple identifier separated by comma (,) or put this option
@@ -420,7 +423,8 @@ good-names=i,
            k,
            ex,
            Run,
-           _
+           _,
+           db
 
 # Include a hint for the correct naming format with invalid-name.
 include-naming-hint=no

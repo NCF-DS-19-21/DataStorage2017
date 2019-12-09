@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 .vscode/
 *.db
+.DS_Store
+node_modules/
+semantic/
